@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html ng-app='profile'>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet"
+	href="../css/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="../css/bootstrap/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../css/angular-material.min.css">
+<link rel="stylesheet" href="../css/AdminLTE.min.css">
+
+</head>
+<body class="full">
+	<div class="wrapper">
+		<div class="container">
+			<div class="row vertical-center-row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-3 pull-right col-xs-12">
+							<div class="box box-primary">
+								<div class="box-body box-profile">
+
+									<img class="profile-user-img img-responsive img-circle"
+										src="../images/sriniprofile.png" alt="User profile picture"
+										id="profileImage" data-toggle="modal" href="#myModal">
+
+									<h3 class="profile-username text-center">Srinivas
+										Channakeshava</h3>
+									<p class="text-muted text-center">
+										Senior Software Engineer<br> <i class="fa fa-map-marker"
+											aria-hidden="true"></i> Bengaluru,India
+									</p>
+									<hr>
+									<p class="text-center">Hello everyone please do follow me
+										on social network platform for updates</p>
+									<hr>
+									<h5 class="text-center">My Social Profiles</h5>
+									<div id="profile_social">
+										<a href="#"><md-tooltip md-direction="bottom">
+											Facebook </md-tooltip><i class="fa fa-facebook fa-2x"></i></a> <a href="#"><i
+											class="fa fa-twitter fa-2x"></i> <md-tooltip
+												md-direction="bottom"> Twitter </md-tooltip></a> <a href="#"><i
+											class="fa fa-linkedin fa-2x"></i> <md-tooltip
+												md-direction="bottom"> LinkedIn </md-tooltip></a> <a href="#"><i
+											class="fa fa-github fa-2x"></i> <md-tooltip
+												md-direction="bottom"> GitHub </md-tooltip></a>
+									</div>
+								</div>
+								<!-- /.box-body -->
+							</div>
+
+						</div>
+						<div class="col-md-9 col-xs-12">
+							<div class=" pull-left margin12R">
+								<ul class="navList">
+									<li><a href='#/profile'><div class="circle">
+												<md-tooltip md-direction="right"> Profile </md-tooltip>
+												<i class="fa fa-user fa-2x" style="padding-top: 10px"></i>
+											</div></a></li>
+									<li><a href='#/resume'><div class="circle">
+												<md-tooltip md-direction="right"> Resume </md-tooltip>
+												<i class="fa fa-tasks fa-2x " style="padding-top: 10px"></i>
+											</div></a></li>
+									<li><a href='#/portfolio'><div class="circle">
+												<md-tooltip md-direction="right"> Portfolio </md-tooltip>
+												<i class="fa fa-briefcase fa-2x " style="padding-top: 10px"></i>
+											</div></a></li>
+									<li><a href='#/blog'><div class="circle">
+												<md-tooltip md-direction="right"> Blog </md-tooltip>
+												<i class="fa fa-universal-access fa-2x "
+													style="padding-top: 10px"></i>
+											</div></a></li>
+									<li><a href='#/contact'><div class="circle">
+												<md-tooltip md-direction="right"> Contact </md-tooltip>
+												<i class="fa fa-envelope fa-2x " style="padding-top: 10px"></i>
+											</div></a></li>
+
+								</ul>
+							</div>
+							<div class="col-md-10 dataContent"
+								style="height: 565px; overflow-y: scroll;" ng-view>
+								<!-- <div ng-view></div> -->
+							</div>
+
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal Content (The Image) -->
+		<img class="modal-content" id="profileImageLarge"
+			src="../images/sriniprofile.png">
+
+		<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
+	</div>
+
+</body>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script
+	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAg1trx8nGtDO2svI12nqs0W0x6C60pYps"></script>
+<script type="text/javascript"
+	src="../css/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/angular/angular.min.js"></script>
+<script type="text/javascript" src="../js/angular/angular-route.js"></script>
+<script type="text/javascript"
+	src="../js/angular/angular-animate.min.js"></script>
+<script type="text/javascript" src="../js/angular/angular-aria.min.js"></script>
+<script type="text/javascript"
+	src="../js/angular/angular-animate.min.js"></script>
+<script type="text/javascript"
+	src="../js/angular/angular-messages.min.js"></script>
+<script type="text/javascript"
+	src="../js/angular/angular-material.min.js"></script>
+<script type="text/javascript" src="../js/app.js"></script>
+<script type="text/javascript" src="../js/controller.js"></script>
+</html>

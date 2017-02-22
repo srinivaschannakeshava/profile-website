@@ -1,0 +1,678 @@
+@CHARSET "ISO-8859-1";
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+
+/*
+ * FadeIn animation
+*/
+@
+-webkit-keyframes fadeIn { 0% {
+	opacity: 0;
+}
+
+100%
+{
+opacity
+
+
+
+
+:
+
+
+ 
+
+
+1;
+}
+}
+@
+keyframes fadeIn { 0% {
+	opacity: 0;
+}
+
+100%
+{
+opacity
+
+
+
+
+:
+
+
+ 
+
+
+1;
+}
+}
+/* .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+} */
+/*
+ * FadeOut animation
+*/
+@
+-webkit-keyframes fadeOut { 0% {
+	opacity: 1;
+}
+
+100%
+{
+opacity
+
+
+
+
+:
+
+
+ 
+
+
+0;
+}
+}
+@
+keyframes fadeOut { 0% {
+	opacity: 1;
+}
+
+100%
+{
+opacity
+
+
+
+
+:
+
+
+ 
+
+
+0;
+}
+}
+. /* fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+ */
+
+/* rotate and fall */
+@
+keyframes rotateFall { 0% {
+	transform: rotateZ(0deg);
+}
+
+20%
+{
+transform
+
+
+
+
+:
+
+
+ 
+
+
+rotateZ
+
+
+
+
+(10
+deg
+
+
+);
+animation-timing-function
+
+
+
+
+:
+
+
+ 
+
+
+ease-out
+
+
+
+
+;
+}
+40%
+{
+transform
+
+
+
+
+:
+
+
+ 
+
+
+rotateZ
+
+
+
+
+(17
+deg
+
+
+);
+}
+60%
+{
+transform
+
+
+
+
+:
+
+
+ 
+
+
+rotateZ
+
+
+
+
+(16
+deg
+
+
+);
+}
+100%
+{
+transform
+
+
+
+
+:
+
+
+ 
+
+
+translateY
+
+
+
+
+(100%)
+rotateZ
+
+
+
+
+(17
+deg
+
+
+);
+}
+}
+
+/* slide in from the bottom */
+@
+keyframes slideOutLeft {to { transform:translateX(-100%);
+	
+}
+
+}
+
+/* rotate out newspaper */
+@
+keyframes rotateOutNewspaper {to { transform:translateZ(-3000px)rotateZ(360deg);
+	opacity: 0;
+}
+
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@
+keyframes scaleUp {from { opacity:0.3;
+	-webkit-transform: scale(0.8);
+}
+
+}
+
+/* slide in from the right */
+@
+keyframes slideInRight {from { transform:translateX(100%);
+	
+}
+
+to {
+	transform: translateX(0);
+}
+
+}
+
+/* slide in from the bottom */
+@
+keyframes slideInUp {from { transform:translateY(100%);
+	
+}
+
+to {
+	transform: translateY(0);
+}
+
+}
+.ng-enter {
+	-webkit-animation-name: fadeOut;
+	animation-name: fadeOut;
+	/*animation: fadeIn 0.5s ;both ease-in;*/
+	z-index: 8888;
+}
+
+.ng-leave {
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+	/*animation: fadeOut 0.5s ; both ease-in;*/
+	z-index: 9999;
+}
+
+/* .in{
+	animation: fadeIn 0.5s both ease-in;
+} */
+body {
+	font-family: proxima-nova-sc, Helvetica Neue, Helvetica, Arial,
+		sans-serif;
+}
+
+.full {
+	background: url("../images/background.png") center fixed;
+}
+
+#border {
+	border: solid 2px;
+}
+
+.vertical-center-row {
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.float-left {
+	float: right;
+}
+
+ul, li, nav {
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navList {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.navList li {
+	padding: 10px;
+	border-bottom: 1px solid white;
+	text-align: center;
+	vertical-align: middle;
+	color: #0087F7;
+	background-color: #0087F7;
+}
+
+.navList li a {
+	color: #0087F7;
+}
+
+.liactive {
+	color: white !important;
+	background-color: white !important;
+}
+
+.liactive a {
+	color: white !important;
+	background-color: white !important;
+}
+
+.liactive .circle {
+	background: #0087F7 !important;
+}
+
+.lihoveractive {
+	color: white !important;
+	background-color: white !important;
+}
+
+.lihoveractive a {
+	color: white !important;
+	background-color: white !important;
+}
+
+.lihoveractive .circle {
+	background: #0087F7 !important;
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	/*  -webkit-border-radius: 25px;
+      -moz-border-radius: 25px; */
+	border-radius: 25px;
+	background: white;
+	text-align: center;
+}
+
+.box.box-primary {
+	border-top-color: #0087F7;
+}
+
+.box {
+	position: relative;
+	border-radius: 3px;
+	background: white;
+	border-top: 3px solid #0087F7;
+	width: 100%;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.profile-user-img {
+	margin: 0 auto;
+	width: 150px;
+	padding: 3px;
+	border: 3px solid #0087F7;
+}
+
+.profile-username {
+	font-size: 21px;
+	margin-top: 5px;
+}
+
+.text-muted {
+	color: #777;
+}
+
+.box-body {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 10px;
+}
+
+.socialactive i {
+	color: white;
+}
+
+.socialactive {
+	color: white;
+	background-color: #0087F7;
+}
+
+#profile_social {
+	padding-top: 10px;
+	text-align: center;
+}
+
+#profile_social a {
+	width: 45px;
+	height: 45px;
+	margin: 0px 0px 0px 5px;
+	padding: 0;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	color: #0087F7;
+}
+
+#profile_social i {
+	margin-top: 6px;
+}
+
+#profileImage {
+	/* border-radius: 5px; */
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#profileImage:hover {
+	opacity: 0.7;
+}
+
+.margin12R {
+	margin-right: 12px !important;
+}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@
+-webkit-keyframes zoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes zoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
+
+.dataContent {
+	height: 100%;
+	position: absolute;
+	background-color: white;
+	width: 88% !important;
+}
+
+/* .title_content {
+	display: inline-block;
+	font-size: 20px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #DDD;
+} */
+ul.about {
+	margin-bottom: 30px;
+}
+
+ul.about li {
+	margin: 0;
+	color: #717171;
+	display: block;
+	font-size: 13px;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+ul.about li span.value {
+	width: 220px;
+	text-align: left;
+	float: right;
+}
+
+.about i.glyphicon {
+	margin-right: 3px;
+}
+
+.about i.glyphicon, #profile .about label {
+	color: #0087F7;
+}
+
+.progress-bar-custom {
+	background-color: #0087F7 !important;
+	background-image: linear-gradient(to bottom, #0087F7 0, #0087F7 100%)
+		!important;
+}
+
+ul li h5 {
+	border-bottom: 1px solid #0087F7;
+}
+
+ul li h5 {
+	padding-bottom: 10px;
+}
+
+span.duration {
+	float: right;
+}
+
+span.duration {
+	color: #0087F7;
+}
+
+.attributes h6 {
+	color: #0087F7;
+}
+
+p {
+	font-size: 14px;
+	line-height: 22px;
+	text-align: left;
+	margin: 0;
+	color: #999 !important;
+	font-family: 'Lato', sans-serif;
+}
+
+.title_content {
+	display: inline-block;
+	font-size: 20px;
+	/* color: #ffffff; */
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0087F7;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+body::-webkit-scrollbar {
+	width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: #0087F7;
+	outline: 1px solid slategrey;
+}
+
+.dataContent::-webkit-scrollbar {
+	width: 1em;
+}
+
+.dataContent::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.dataContent::-webkit-scrollbar-thumb {
+	background-color: #0087F7;
+	outline: 1px solid slategrey;
+}
+
+#locMap {
+	height: 300px;
+	box-shadow: 0 5px 20px #ccc;
+	/* border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC; */
+}
+
+ul.contactAbout li span.value {
+	float: none !important;
+}
+
+form.contactform label {
+	font-weight: normal !important;
+}
+
+.btn-custom{
+	background-color: #0087F7;
+	color: #ffffff;
+}
